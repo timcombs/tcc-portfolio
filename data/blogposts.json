@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Learning Some Git",
+    "category": "git",
+    "author": "Tim Combs",
+    "authorUrl": "http://https://thisblog.com",
+    "publishedOn": "2016-10-04",
+    "body": "nothing yet, but remember to use markdown to get code and colors!"
+  },
+  {
+    "title": "Basic Terminal Commands",
+    "category": "terminal",
+    "author": "Tim Combs",
+    "authorUrl": "http://https://thisblog.com",
+    "publishedOn": "2016-10-05",
+    "body": "nothing yet, but remember to use markdown to get code and colors!"
+  },
+  {
+    "title": "Clearfix - Fixing CSS Float collapses",
+    "category": "css",
+    "author": "Tim Combs",
+    "authorUrl": "http://https://thisblog.com",
+    "publishedOn": "2016-10-06",
+    "body": "nothing yet, but remember to use markdown to get code and colors!"
+  },
+  {
+    "title": "CSS Image Replacement, -9999px is a Horrible Fix",
+    "category": "css",
+    "author": "Tim Combs",
+    "authorUrl": "http://https://thisblog.com",
+    "publishedOn": "2016-10-07",
+    "body": "nothing yet, but remember to use markdown to get code and colors!"
+  },
+  {
+    "title": "Not So Basic Terminal Commands",
+    "category": "terminal",
+    "author": "Tim Combs",
+    "authorUrl": "http://https://thisblog.com",
+    "publishedOn": "2016-10-08",
+    "body": "nothing yet, but remember to use markdown to get code and colors!"
+  },
+  {
+    "title": "Learning Some More Git",
+    "category": "git",
+    "author": "Tim Combs",
+    "authorUrl": "http://https://thisblog.com",
+    "publishedOn": "2016-10-09",
+    "body": "nothing yet, but remember to use markdown to get code and colors!"
+  }
+]

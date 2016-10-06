@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>A Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+  <!-- need to build a handlebars template for blog post, project page & video
+       upload. each gets a script tags: one with the id blog-template, one with id project-template one with id video-template. note: how the other two script tags are used to sort the posts by category.
+       can i make it so i can give the posts multiple categories? -->
+
+    <script id="blog-template" type="text/x-handlebars-template">
+      <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            By <address><a href="{{authorURL}}">{{author}}</a></address>{{publishStatus}}
+          </div>
+        </header>
+        <section class="article-body">{{{body}}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
+    </script>
+
+    <!-- not sure this will work. probably need more json files for the data
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="clearfix" data-author="{{author}}">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            By <address><a href="{{authorURL}}">{{author}}</a></address>{{publishStatus}}
+          </div>
+        </header>
+        <section class="project-body">{{{body}}}</section>
+        <a href="#" class="read-on">See details &rarr;</a>
+      </article>
+    </script>
+
+    <script id="video-template" type="text/x-handlebars-template">
+      <article class="clearfix" data-author="{{author}}">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            By <address><a href="{{authorURL}}">{{author}}</a></address>{{publishStatus}}
+          </div>
+        </header>
+        <section class="video-body">{{{videoURL<or maybe iframe?>}}}</section>
+      </article>
+    </script>
+    -->
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="icon-menu"></div>
+        <ul>
+          <li class="tab" data-content="blog"></li>
+          <li class="tab" data-content="projects"></li>
+          <li class="tab" data-content="video"></li>
+          <li class="tab" data-content="about"></li>
+      <!-- need to get an icon for linkedIn
+           target="_blank" tells browser to open link in a new windo or tab -->
+          <li><a href="http://www.linkedin.com/timothycombs" target="_blank" class="<icon-linkedin>">LinkedIn</a></li>
+          <li><a href="http://www.github.com/timcombs" target="_blank" class="icon-github">Github</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="projects" class="tab-content">
+      </section>
+
+      <section id="blog" class="tab-content">
+      </section>
+
+      <section id="about" class="tab-content">
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2016 Tim Combs | Portfolio + Blog | Creative Coding!
+    </footer>
+
+    <!-- vendor files -->
+    <script src="vendor/scripts/page.js"></script>
+    <script src="vendor/scripts/jquery.js"></script>
+    <script src="vendor/scripts/handlebars-v4.0.5.js"></script>
+    <script src="vendor/scripts/marked.js"></script>
+    <script src="vendor/scripts/highlight.pack.js"></script>
+
+    <!-- model files -->
+    <!-- view files -->
+    <!-- controller files -->
+  </body>
+</html>
